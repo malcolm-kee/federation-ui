@@ -1,0 +1,57 @@
+{
+	"name": "@mkeeorg/federation-ui",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"module": "./dist/index.mjs",
+	"peerDependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Malcolm Kee",
+		"email": "malcolm.keeweesiong@gmail.com"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"classnames": "^2.3.2"
+	},
+	"scripts": {
+		"build": "pnpm run lib:build && pnpm run app:build",
+		"app:build": "cross-env NODE_ENV=production webpack --mode production",
+		"app:dev": "cross-env NODE_ENV=development webpack serve --mode development --env development",
+		"lib:build": "tsup",
+		"lib:dev": "tsup --watch"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.39",
+		"@types/react-dom": "^17.0.11",
+		"autoprefixer": "^10.4.13",
+		"css-loader": "^6.7.1",
+		"css-minimizer-webpack-plugin": "^4.2.2",
+		"cross-env": "^7.0.3",
+		"esbuild-loader": "^2.20.0",
+		"html-webpack-plugin": "^5.3.1",
+		"mini-css-extract-plugin": "^2.6.1",
+		"optimize-css-assets-webpack-plugin": "^6.0.1",
+		"postcss": "^8.4.18",
+		"postcss-cli": "^10.0.0",
+		"postcss-loader": "^7.0.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"style-loader": "^3.3.1",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.4",
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.11.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist"
+	]
+}

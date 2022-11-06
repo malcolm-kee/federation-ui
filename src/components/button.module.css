@@ -1,0 +1,48 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5rem;
+	font-weight: 500;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	position: relative;
+	top: 0px;
+	transition-property: top, color;
+	transition-duration: 100ms;
+	transition-timing-function: ease-in-out;
+}
+
+.btn:active {
+	top: 1px;
+}
+
+.defaultSize {
+	font-size: 1rem;
+	padding-inline: 2rem;
+	padding-block: 0.75rem;
+}
+
+.smallSize {
+	font-size: 0.875rem;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+}
+
+.primary {
+	color: white;
+	background-color: rgb(219, 39, 119);
+}
+
+.primary:hover {
+	background-color: rgb(190, 24, 93);
+}
+
+.white {
+	color: rgb(219, 39, 119);
+	background-color: white;
+}
+
+.white:hover {
+	background-color: rgb(249, 250, 251);
+}
