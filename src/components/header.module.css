@@ -1,0 +1,22 @@
+.header {
+	color: white;
+	background-color: rgb(219, 39, 119);
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.container {
+	max-width: 72rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-inline: auto;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 8px;
+}
+
+@media (min-width: 640px) {
+	.container {
+		padding-inline: 24px;
+	}
+}

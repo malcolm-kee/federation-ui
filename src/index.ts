@@ -3,6 +3,7 @@ import './reset.css';
 export { Button } from './components/button';
 export type { ButtonProps } from './components/button';
 export { Container } from './components/container';
+export { Header } from './components/header';
 export { definePlugin } from './plugin/define-plugin';
 export {
 	PluginContextProvider,
