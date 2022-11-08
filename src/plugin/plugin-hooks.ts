@@ -37,3 +37,12 @@ export const usePluginFillItems = (options: { slotId: string }) => {
 		[plugins, options.slotId]
 	);
 };
+
+export const usePluginRoutes = () => {
+	const plugins = React.useContext(PluginContext);
+
+	return React.useMemo(
+		() => plugins && plugins.map((plugin) => plugin.routes).flat(1),
+		[plugins]
+	);
+};

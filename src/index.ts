@@ -9,7 +9,8 @@ export {
 	PluginContextProvider,
 	usePluginFillItems,
 	usePluginNavItems,
+	usePluginRoutes,
 } from './plugin/plugin-hooks';
 export { Slot } from './plugin/slot';
 export type { SlotProps } from './plugin/slot';
-export type { FillItem, NavItem, PluginConfig } from './plugin/types';
+export type { FillItem, NavItem, PluginConfig, Route } from './plugin/types';

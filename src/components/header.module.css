@@ -20,3 +20,8 @@
 		padding-inline: 24px;
 	}
 }
+
+.linkItem {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}

@@ -18,7 +18,12 @@ const HeaderWithPluginItems = () => {
 		<HeaderImpl>
 			{navItems &&
 				navItems.map((item, index) => (
-					<Link to={item.url} data-app={item.appName} key={index}>
+					<Link
+						to={item.url}
+						data-app={item.appName}
+						className={styles.linkItem}
+						key={index}
+					>
 						{item.label}
 					</Link>
 				))}

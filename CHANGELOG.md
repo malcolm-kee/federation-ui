@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.0
+
+Support route options for plugin.
+
 ## 1.2.0
 
 Add `<Header />` component.
